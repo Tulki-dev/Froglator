@@ -1,0 +1,254 @@
+body {
+    background-color: #acfae4;
+}
+
+h1 { text-align: center;
+    margin-top: 0.5em;
+    font-family: 'Rubik Puddles', cursive;
+    font-size: 4.5em;
+}
+
+#eyes {
+    display: flex;
+    flex-direction: row;
+    margin-top: -5em;
+    width: 40em;
+    justify-content: space-between;
+}
+
+
+.eye {
+    border-radius: 100%;
+    background-color: #41a568 ;
+    height: 12em;
+    width: 12em;
+    display: grid;
+    place-items: center;
+}
+.whiteeye {
+    border-radius: 100%;
+    background-color: #f9fcfb ;
+    height: 9em;
+    width: 9em;
+    display: grid;
+    justify-items:flex-end;
+}
+
+.blackeye {
+    border-radius: 100%;
+    background-color: black ;
+    height: 7em;
+    width:7em;
+    margin: 0.3em;
+}
+.container {
+    background-color: #43a367;
+    margin: auto;
+    margin-top: 4em;
+    display: grid;
+    place-items: center;
+    max-width: 40em;
+    height: 40em;
+    border-radius: 4em;
+}
+
+.result {
+    background-color: #ff8364;
+    border-radius: 1.5em;
+    font-size: 2em;
+    padding: 1em;
+    text-align: center;
+    width: 35%;
+    margin-top: -6em;
+}
+
+.numbers {
+    margin: auto;
+    display: grid;
+    grid-template-columns: 5em 5em 5em 1em 5em 5em;
+    grid-template-rows: 5em 5em 5em 5em;
+    margin-bottom: 3.5em;
+    margin-top: -4em;
+    gap: 20px;
+    width: 82%;
+    grid-template-areas:
+        "n7 n8 n9 nul c del"
+        "n4 n5 n6 nul div mult"
+        "n1 n2 n3 nul men mai"
+        "n0 n0 np nul por igu"
+}
+
+
+.number {
+    display: grid;
+    place-items: center;
+    background-color: #a8d966;
+    border-radius: 1em;
+    box-shadow: 0.3em 0.5em 0.3em  #415428;
+    font-size: 1.8em;
+}
+
+.number7 { 
+    grid-area: n7;
+
+}
+
+.number8 {
+    grid-area: n8;
+
+
+}
+
+.number9 {
+    grid-area: n9;
+
+}
+
+.number4 {
+    grid-area: n4;
+}
+
+.number5 {
+    grid-area: n5;
+ 
+
+}
+
+.number6 {
+    grid-area: n6;
+ 
+
+}
+
+.number1 {
+    grid-area: n1;
+}
+
+.number2 {
+    grid-area: n2;
+}
+
+.number3 {
+    grid-area: n3;
+}
+
+.number0 {
+    grid-area: n0;
+}
+
+.numberp {
+    grid-area: np;
+}
+
+.C {
+    grid-area: c;
+    background-color: #ffe6cc;
+
+}
+
+.del{
+    grid-area: del;
+    background-color: #ffe6cc;
+}
+
+.division {
+    grid-area: div;
+}
+
+.numbermult {
+    grid-area: mult;
+}
+
+.numbermen {
+    grid-area: men;
+
+}
+
+.numbermai{
+    grid-area: mai;
+}
+
+.numberpor {
+    grid-area: por;
+}
+
+.numberigu {
+    grid-area: igu;
+    background-color: #f8ff95;
+}
+.nulo {
+    grid-area: nul;
+    background-color: #43a367;
+    box-shadow: none;
+
+}
+
+
+@media only screen and (max-width: 767px) {
+    h1 { text-align: center;
+        margin-top: 0.3em;
+        font-family: 'Rubik Puddles', cursive;
+        font-size: 3em;
+    }
+    .container {
+        background-color: #43a367;
+        margin: auto;
+        margin-top: 6em;
+        display: grid;
+        place-items: center;
+        max-width: 40em;
+        height: 30em;
+        border-radius: 4em;
+    }
+    .numbers {
+        grid-template-columns: 3.3em 3.3em 3.3em 0.5em 3.3em 3.3em;
+        grid-template-rows: 3.3em 3.3em 3.3em 3.3em;
+        margin-bottom: 3.5em;
+        gap: 15px;
+        margin-left: 0.5em;
+        margin-top: -9em;
+        width: 100%;
+        grid-template-areas:
+            "n7 n8 n9 nul c del"
+            "n4 n5 n6 nul div mult"
+            "n1 n2 n3 nul men mai"
+            "n0 n0 np nul por igu"
+    }
+    #eyes {
+        display: flex;
+        flex-direction: row;
+        margin-top: -7em;
+        width: 25em;
+        justify-content: space-between;
+    }
+
+    .result {
+        background-color: #ff8364;
+        border-radius: 1.5em;
+        font-size: 2em;
+        margin: 1em;
+        padding: 0.5em;
+        text-align: center;
+        width: 35%;
+        margin-top: -5em;
+    }
+    #eyes {
+        width: 22em;
+    }
+    .eye {
+        height: 9em;
+        width: 9em;
+    }
+    .whiteeye {
+        height: 7em;
+        width: 7em;
+    }
+    
+    .blackeye {
+        height: 5em;
+        width:5em;
+    }
+
+}
+
+
